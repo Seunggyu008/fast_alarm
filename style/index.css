@@ -68,4 +68,6 @@ body {
 }
 .alarm_check.active {
   display: block;
+  border: none;
+  cursor: pointer;
 }
