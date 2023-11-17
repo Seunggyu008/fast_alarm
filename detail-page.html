@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>알람 페이지</title>
+    <link rel = "stylesheet" href = "style/common.css" />
+    <link rel = "stylesheet" href = "/style/detail-page.css" />
+</head>
+<body>
+    <h1 class = "a11y-hidden">알람 설정</h1>
+    <div class = "alarm-wrap">
+        <button>뒤로가기</button>
+    <div class = "flex-container">
+    <form class = "time-form">
+        <select for = "timeframe" id = "timeframe">
+            <option value = "morning">오전</option>
+            <option value = "afternoon">오후</option>
+        </select>
+            <label for = "hour">시간</label>
+            <input id = "hour" type = "number" />
+            <label for = "min">분</label>
+            <input id = "min" type = "number" />
+            <label for = "sec">초</label>
+            <input id = "sec" type = "number" />
+        </div>
+        <div class = "button-wrap">
+            <button class = "save-button" type = "submit">저장</button>
+            <button>취소</button>
+        </div> 
+    </div>
+    </form>
+    <script src = "js/passForm.js"></script>    
+</body>
+</html>
